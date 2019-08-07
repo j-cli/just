@@ -1,0 +1,32 @@
+{
+  "name": "just-create-app",
+  "version": "1.0.2",
+  "main": "commands/container.ts",
+  "license": "MIT",
+  "bin": {
+    "just": "./bin"
+  },
+  "scripts": {
+    "watch:build": "nodemon -e ts -w ./commands -x tsc"
+  },
+  "repository": "j-cli/just",
+  "dependencies": {
+    "@types/which": "^1.3.1",
+    "chalk": "2.4.2",
+    "func": "1.3.0",
+    "react-app-rewire-hot-loader": "2.0.1",
+    "react-app-rewired": "2.1.3",
+    "react-scripts": "3.0.1",
+    "webpack-merge": "^4.2.1",
+    "which": "^1.3.1"
+  },
+  "devDependencies": {
+    "@types/chalk": "^2.2.0",
+    "@types/node": "12.6.9",
+    "my-awesome-tsconfig": "^1.0.3",
+    "typescript": "3.4.5"
+  },
+  "peerDependencies": {
+    "react-hot-loader": "4.0.0"
+  }
+}
